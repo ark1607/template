@@ -10,7 +10,7 @@ def play_game(limit):
     count = 1
     guess = int(input("Your guess?:"))
 
-while(guess != number):
+    while(guess != number):
         if guess < number:
             print("Too low")
             count += 1
@@ -28,7 +28,7 @@ def main():
         play_game(limit)
         again = input("Would you like to play again? Enter (yes/no)")
         print()
-    print("Bye")
+print("Bye")
     
-    if __name__ == "__main__":
+if __name__ == "__main__":
         main()
